@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import { Amplify } from 'aws-amplify';
+import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import awsExports from './aws-exports';
 
@@ -12,7 +13,7 @@ export default function App() {
     <div className="App">
       <header className="App-header">
           <p>
-            xlk
+            xlk <img src={logo} className="App-logo" alt="logo" />
           </p>
           <Authenticator>
             {({ signOut, user }) => (
@@ -22,7 +23,7 @@ export default function App() {
               </main>
             )}
           </Authenticator>
-          <img src={logo} className="App-logo" alt="logo" />
+
       </header>
     </div>
   );
