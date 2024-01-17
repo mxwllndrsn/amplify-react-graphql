@@ -23,7 +23,6 @@ export default function App() {
               </main>
             )}
           </Authenticator>
-
       </header>
     </div>
   );
