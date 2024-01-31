@@ -24,6 +24,7 @@ function App() {
             )}
           </withAuthenticator>
       </header>
+      <button>hello</button>
     </div>
   );
 }
